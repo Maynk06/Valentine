@@ -13,10 +13,17 @@
 
 #gif{
     height: 15rem;
-    margin: 2rem 0;
+    margin: 1.4rem 0;
+
+  width: 80%;
+  max-width: 260px;
+  height: auto;
+
 }
 .gif-box{
-   /* height: 40rem; */
+   height: 20rem;
+   width: auto;
+   
    display: flex;
     justify-content: center;
 
@@ -27,6 +34,11 @@
     color: #dc2e77;
     justify-self:center;
     font-size: 3.5rem;
+  
+  max-width: 90%;
+  margin: auto;
+  word-wrap: break-word;
+
 }
 #yes{
     height: 4rem;
@@ -64,10 +76,8 @@
 }
 .out-box{
     background-color: pink;
-    /* display: flex; */
-    /* justify-self: center;
-    align-self: center; */
-    
+    align-content: center; 
+
     margin: 10rem;
     height: 80vh;
     width: 60vw;
@@ -88,4 +98,52 @@
         transform: translateY(105vh) rotate(360deg);
     }
 }
+/* //////////////////////////////////// */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0;
+    }
+
+    .out-box {
+        width: 90%;          
+        height: auto;      
+        min-height: 80vh;    
+        margin: 20px auto;   
+        padding: 30px 15px; 
+        flex-direction: column;
+        justify-content: space-around; /* Items ke beech barabar space */
+    }
+
+    #gif {
+        height: 18rem;     
+        width: auto;
+        margin: 0;
+    }
+
+    #text {
+        font-size: 4.8rem;  
+        line-height: 1.1;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;         
+        padding: 0;
+    }
+
+    #yes, #no {
+        height: 7rem;       
+        width: 12rem;       
+        font-size: 2rem;   
+        margin: 0;
+    }
+}
+
+
 
