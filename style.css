@@ -14,19 +14,21 @@
 #gif{
     height: 15rem;
     margin: 1.4rem 0;
+    /* margin-bottom: 2rem; */
 
-  width: 80%;
+scale: 2;
+
+width: 80%;
   max-width: 260px;
   height: auto;
 
 }
 .gif-box{
-   height: 20rem;
+   height: 18rem;
    width: auto;
-   
+    margin-bottom: 10rem;
    display: flex;
     justify-content: center;
-
 
 }
 #text{
@@ -84,6 +86,8 @@
 }
 
 
+
+
 .heart {
     position: fixed;
     top: -1vh;
@@ -117,7 +121,8 @@
     }
 
     #gif {
-        height: 18rem;     
+     
+        height: 18rem;    
         width: auto;
         margin: 0;
     }
@@ -144,6 +149,7 @@
         margin: 0;
     }
 }
+
 
 
 
