@@ -17,10 +17,10 @@ function noClick(){
 
 let texts = [
     "Will You be my Valentine?🌹",
-    "Soch le dobara😒",
+    "Soch le dobara😏",
     "pit jaegii😭",
     "itna maarunga naa😡",
-    "Last chance",
+    "Last chance🙄",
     "Will You be my Valentine?🌹huhhh"
 ];
 if(count<texts.length){
@@ -35,18 +35,18 @@ function yesClick(){
   
     document.getElementById("gif").src = "gif/happy.webp";
     document.getElementById("text").innerHTML = "Happy Valentine Day Jaanuuu💗💍";
+      document.getElementById("text").style.fontSize = "3.2rem";
     document.getElementById("yes").style.display = "none";
     document.getElementById("no").style.display = "none";
 
     if(!document.getElementById("extra-message")){
         const para = document.createElement("p");
         para.id = "extra-message";
-        para.innerHTML = "I am the luckiest guy to have you in my life. I love youu soo much babyy!🌹💋<br>Life feels perfect when you’re with me.💞";
-        
+        para.innerHTML = "I am the luckiest guy to have you in my life. I love youu soo much babyy!🌹💋<br>Life feels perfect when you’re with me my foreverr🧿💞";
         
         para.style.textAlign = "center";
         para.style.fontSize = "1.5rem";
-        para.style.marginTop = "20px";
+        para.style.marginTop = "18px";
         para.style.color = "#d63384";
         para.style.fontWeight = "400";
         para.style.lineHeight = "1.6";
@@ -63,7 +63,7 @@ function createHeart() {
     const emojis = ['❤️', '💖', '💝', '🌸', '🌹', '✨', '💕', '🥰', '🎈', '💘', '🌷'];
     heart.innerText = emojis[Math.floor(Math.random() * emojis.length)];
     
-    // Random positioning
+    
     heart.style.left = Math.random() * 100 + "vw";
     
     const size = Math.random() * 30 + 20 + "px"; 
@@ -76,7 +76,6 @@ function createHeart() {
 
     container.appendChild(heart);
     
-    // Cleanup
     setTimeout(() => {
         heart.remove();
     }, 5000);
