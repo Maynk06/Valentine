@@ -45,7 +45,7 @@ function yesClick(){
         para.innerHTML = "I am the luckiest guy to have you in my life. I love youu soo much babyy!🌹💋<br>Life feels perfect when you’re with me my foreverr🧿💞";
         
         para.style.textAlign = "center";
-        para.style.fontSize = "1.5rem";
+        para.style.fontSize = "1.9rem";
         para.style.marginTop = "18px";
         para.style.color = "#d63384";
         para.style.fontWeight = "400";
@@ -87,3 +87,4 @@ setInterval(createHeart, 200);
 for(let i=0; i<10; i++) {
     setTimeout(createHeart, i * 100);
 }
+
